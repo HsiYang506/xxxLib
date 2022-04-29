@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--标题栏的颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏的颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--默认的光标、选中的RadioButton颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 避免控件会顶到状态栏上 -->
+        <item name="windowActionBar">false</item>//无ActionBar
+        <item name="windowNoTitle">true</item>//无标题
+        <item name="android:windowFullscreen">true</item>//全屏
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+
+    </style>
+
+
+    <style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--设置顶部状态栏是否为透明-->
+        <item name="android:windowTranslucentStatus">false</item>
+
+        <!--Android 5.x开始需要把颜色设置透明，否则顶部导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!--设置顶部状态栏和底部导航栏是否为透明-->
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="AppFullTheme" parent="ImageTranslucentTheme">
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:ignore="NewApi">shortEdges</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+</resources>
