@@ -59,7 +59,7 @@ afterEvaluate {
 
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.github.rlone1wolf'
-                artifactId  = 'xxxLib'
+                artifactId = 'xxxLib'
                 version ='1.0.2'
             }
             // Creates a Maven publication called “debug”.
