@@ -43,9 +43,6 @@ dependencies {
 }
 
 
-def group = 'com.github.rlone1wolf'
-def artifactId = "xxxLib"
-def version_ = '1.0.2'
 
 
 // Because the components are created only during the afterEvaluate phase, you must
@@ -59,18 +56,18 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = group
-                artifactId = artifactId
-                version = version_
+                groupId = 'com.github.rlone1wolf'
+                artifactId = 'xxxLib'
+                version ='1.0.2'
             }
             // Creates a Maven publication called “debug”.
             debug(MavenPublication) {
                 // Applies the component for the debug build variant.
                 from components.debug
 
-                groupId = group
-                artifactId = artifactId + '_debug'
-                version = version_
+                groupId = 'com.github.rlone1wolf'
+                artifactId = 'xxxLib'+ '_debug'
+                version ='1.0.2'
             }
         }
     }
