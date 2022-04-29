@@ -44,8 +44,8 @@ dependencies {
 
 
 def group = 'com.github.rlone1wolf'
-def artifacts = "xxxLib"
-def version = '1.0.0'
+def artifactId = "xxxLib"
+def version_ = '1.0.2'
 
 
 // Because the components are created only during the afterEvaluate phase, you must
@@ -61,7 +61,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = group
                 artifactId = artifacts
-                version = version
+                version = version_
             }
             // Creates a Maven publication called “debug”.
             debug(MavenPublication) {
@@ -70,7 +70,7 @@ afterEvaluate {
 
                 groupId = group
                 artifactId = artifacts + '_debug'
-                version = version
+                version = version_
             }
         }
     }
